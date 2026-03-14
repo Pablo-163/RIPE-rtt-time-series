@@ -1,3 +1,36 @@
+"""
+===============================================================================
+File: ripe_funcs.py
+Description: Functions and scripts for retrieving and preprocessing data
+             from the RIPE Atlas API.
+
+This module provides utilities to:
+  - Query RIPE Atlas measurements via the API
+  - Download and store measurement results
+  - Preprocess and clean measurement data
+  - Support batch processing for multiple probes or measurements
+  - Some plotting graphs features
+
+Author: Pavel Izyumov
+Email: izyumov.ps@phystech.edu
+Date: 2026-03-14
+License: MIT License (or specify another license)
+
+Dependencies:
+  - requests
+  - pandas
+  - time
+  - numpy
+  - matplotlib
+
+Usage Examples:
+    from ripe_funcs import plot_cdf, get_probe_info
+
+    # Get Probe's metadata
+    clean_data = get_probe_info(pdr_id = 1234)
+===============================================================================
+"""
+
 #process data
 import pandas as pd
 import numpy as np
